@@ -1,6 +1,10 @@
 package ru.yandex;
 
+import io.qameta.allure.Step;
+
 public class Praktikum {
+
+    @Step("Проверка текста для эмбоссирования")
     public static void main(String args[]) {
 
         String name = "Тимоти Шаламе";
