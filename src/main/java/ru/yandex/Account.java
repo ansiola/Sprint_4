@@ -10,6 +10,7 @@ public class Account {
         this.name = name;
     }
 
+    @Step("Проверка текста для эмбоссирования")
     public boolean checkNameToEmboss() {
 
         if (name == null) {
