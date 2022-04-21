@@ -11,13 +11,10 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 
 @RunWith(Parameterized.class)
-
 public class AccountTest {
-
     private Account account;
     private final String name;
     private final boolean expected;
-
 
     public AccountTest(String name, boolean expected) {
         this.name = name;
@@ -25,7 +22,7 @@ public class AccountTest {
     }
 
     @Before
-    public void setUp(){
+    public void setUp() {
         account = new Account(name);
     }
 
@@ -67,6 +64,6 @@ public class AccountTest {
     @Description("check method checkNameToEmboss, the method return true or false")
     public void printAccountFirstNameAndLastName() {
 
-        Assert.assertEquals(account.checkNameToEmboss(),expected);
+        Assert.assertEquals(expected, account.checkNameToEmboss());
     }
 }

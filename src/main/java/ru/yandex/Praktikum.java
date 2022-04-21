@@ -1,6 +1,9 @@
 package ru.yandex;
 
+import io.qameta.allure.Step;
+
 public class Praktikum {
+
     public static void main(String args[]) {
 
         String name = "Тимоти Шаламе";
